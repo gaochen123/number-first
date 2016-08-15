@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body {
+				background-color: darkgray;
+			}
+			
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			.top {
+				width: 100%;
+				height: 37px;
+				border: solid 1px #DBDBDB;
+				background-color: #FAFAFA;
+				z-index: 10;
+			}
+			
+			.top-one {
+				width: 1200px;
+				margin: 0px auto;
+				/*border: solid 1px;*/
+				height: 37px;
+			}
+			
+			.qing {
+				font-size: 14px;
+			}
+			
+			.top-one-a {
+				text-decoration: none;
+				color: blue;
+				font: 14px Arial, Helvetica, sans-serif;
+			}
+			
+			.top-one-left {
+				font: 14px Arial, Helvetica, sans-serif;
+				background-color: white;
+				width: 105px;
+				height: 37px;
+				border: solid 1px #f0f0f0;
+				padding: 0px 7px 0px 6px;
+				line-height: 37px;
+				display: inline-block;
+			}
+			
+			.top-one-left-di {
+				width: 52px;
+				height: 8px;
+				border: solid 1px white;
+				background-color: white;
+				position: absolute;
+				left: 117px;
+				top: 37px;
+			}
+			
+			.top-one-zhong {
+				display: inline-block;
+			}
+			
+			.shz {
+				font-size: 14px;
+			}
+			
+			.tj {
+				height: 23px;
+				border: solid 1px #DBDBDB;
+			}
+			
+			.right {
+				width: 540px;
+				height: 37px;
+				float: right;
+				font-size: 12px;
+				color: #666666;
+			}
+			
+			.right ul {
+				margin-top: 37px;
+				width: 80px;
+				border: solid 1px #DBDBDB;
+				text-align: center;
+				z-index: 10;
+				display: none;
+			}
+			
+			.right ul li {
+				background-color: white;
+				height: 30px;
+				list-style-type: none;
+				/*float: left;*/
+				line-height: 30px;
+			}
+			
+			.right ol li {
+				height: 37px;
+				list-style-type: none;
+				margin-left: 10px;
+				float: left;
+				line-height: 37px;
+			}
+			
+			#sc1 {
+				margin-top: 37px;
+				margin-left: 70px;
+				width: 80px;
+				border: solid 1px #DBDBDB;
+				text-align: center;
+				z-index: 10;
+				display: none;
+			}
+			
+			#kh {
+				margin-top: 37px;
+				margin-left: 220px;
+				width: 80px;
+				border: solid 1px #DBDBDB;
+				text-align: center;
+				z-index: 10;
+				display: none;
+			}
+			
+			.bottom {
+				position: absolute;
+				bottom: 0px;
+				width: 100%;
+				height: 478px;
+				background-color: white;
+			}
+			
+			.bottom-main {
+				margin: auto;
+				width: 1200px;
+				border: solid 1px;
+				height: 476px;
+			}
+			
+			.bottom-main-top {
+				width: 1200px;
+				height: 128px;
+				border: solid 1px #EBEBEB;
+			}
+			
+			.bottom-main-top li {
+				/*border: solid 1px;*/
+				margin-left: 90px;
+				float: left;
+				height: 128px;
+				list-style-type: none;
+				line-height: 128px;
+			}
+			
+			.bottom-main-top li a {
+				/*border: solid 1px;*/
+				margin-left: 30px;
+				font-weight: bold;
+			}
+			
+			.bottom-main-top img {
+				vertical-align: middle;
+			}
+			
+			.bottom-main-bottom ul {
+				margin: 40px 0px 0px 90px;
+				line-height: 25px;
+				float: left;
+			}
+			
+			.bottom-main-bottom .xin {
+				color: #666666;
+				font-size: 14px;
+				font-weight: bold;
+			}
+			
+			.bottom-main-bottom ul li {
+				color: #666666;
+				font-size: 12px;
+				list-style-type: none;
+			}
+			
+			.bottom-main-bottom {
+				width: 1200px;
+				height: 200px;
+				border: solid 1px;
+			}
+			
+			.bottom-main-di ol li a {
+				text-decoration: none;
+				color: #666666;
+				font-size: 12px;
+			}
+			
+			.bottom-main-di ol {
+				margin-left: 130px;
+			}
+			
+			.bottom-main-di .er {
+				margin-left: 260px;
+				margin-top: 10px;
+			}
+			
+			.bottom-main-di .san {
+				margin-left: 410px;
+				margin-top: 10px;
+			}
+			
+			.bottom-main-di .si {
+				margin-left: 150px;
+				margin-top: 10px;
+			}
+			
+			.bottom-main-di ol li {
+				/*height: 10px;*/
+				padding: 0px 0px 0px 10px;
+				/*border: solid 1px #A3A3A3;*/
+				list-style-type: none;
+				float: left;
+			}
+			.iconfont{
+				color: #0000FF;
+				font-size: 20px;
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload = function() {}
+
+			function my() {
+				var wd = document.getElementById("wode1").style.display = "block";
+			}
+
+			function xsmy() {
+				var wd = document.getElementById("wode1").style.display = "none";
+			}
+
+			function sc() {
+				var sc = document.getElementById("sc1").style.display = "block";
+			}
+
+			function xssc() {
+				var sc = document.getElementById("sc1").style.display = "none";
+			}
+
+			function kehu() {
+				var kh = document.getElementById("kh").style.display = "block";
+			}
+
+			function xskehu() {
+				var kh = document.getElementById("kh").style.display = "none";
+			}
+		</script>
+	</head>
+
+	<body>
+		<div class="top">
+			<div class="top-one">
+				<div class="top-one-left">
+
+					<span class="top-one-left-hi">
+					Hi,</span><span class="qing">
+					请 </span><a class="top-one-a" href="">登录</a>/<a class="top-one-a" href="">注册</a>
+					<div class="top-one-left-di">
+
+					</div>
+
+				</div>
+
+				<span class="shz">
+							送货至
+						</span>
+
+				<select class="tj" name="">
+							<option value="天津">天津</option>
+						</select>
+				<div class="right">
+					<span class="one">
+						<ol >
+							<li onmouseover="my()" onmouseout="xsmy()">我的1号店&nbsp; |</li>
+							<li onmouseover="sc()" onmouseout="xssc()">收藏夹&nbsp; |</li>
+							<li>掌上1号点&nbsp;&nbsp; |</li>
+							<li onmouseover="kehu()" onmouseout="xskehu()">客户服务&nbsp;&nbsp; |</li>
+							<li>网站导航&nbsp;&nbsp; | </li>
+							<li>关注我们</li><i class="iconfont">&#xe629;</i>
+						</ol>
+					</span>
+					<ul id="wode1">
+						<li>我的订单</li>
+						<li>我的积分</li>
+						<li>我的红包</li>
+						<li>我的抵用券</li>
+						<li>我的评论</li>
+						<li>会员专享</li>
+					</ul>
+					<ul id="sc1">
+						<li>商店收藏</li>
+						<li>店铺收藏</li>
+					</ul>
+					<ul id="kh">
+						<li>包裹跟踪</li>
+						<li>常见问题</li>
+						<li>在线退货换货</li>
+						<li>在线投诉</li>
+						<li>配送范围</li>
+					</ul>
+					<!--<ul id="wz">
+						<li>包裹跟踪</li>
+						<li>常见问题</li>
+						<li>在线退货换货</li>
+						<li>在线投诉</li>
+						<li>配送范围</li>
+					</ul>-->
+
+				</div>
+
+			</div>
+			<div class="bottom">
+				<div class="bottom-main">
+					<div class="bottom-main-top">
+						<ul>
+							<li>
+								<img src="img/yhd/CgQI0lWskgmADBnsAAAPZvcSh3E68900.jpg" />
+								<a class="one">
+								正品保障
+							</a>
+
+							</li>
+							<li>
+								<img src="img/yhd/CgQIz1WslI-Adao3AAAN5b_ut2I80100.jpg" />
+								<a class="one">
+								满68包邮
+							</a>
+							</li>
+							<li>
+								<img src="img/yhd/ChEbulWsk4iADa_aAAAM544hHN818600.jpg" />
+								<a class="one">
+								准时送达
+							</a>
+							</li>
+							<li>
+								<img src="img/yhd/ChEi11WsyiyALBbiAAAN9lEEK5M33200.jpg" />
+								<a class="one">
+								售后无忧
+							</a>
+							</li>
+						</ul>
+					</div>
+					<div class="bottom-main-bottom">
+						<ul>
+							<li class="xin">新手入门</li>
+							<li>购物流程</li>
+							<li>会员制度</li>
+							<li>订单查询</li>
+							<li>发票制度</li>
+							<li>常见问题</li>
+						</ul>
+						<ul>
+							<li class="xin">支付方式</li>
+							<li>货到付款</li>
+							<li>网上支付</li>
+							<li>银行转账</li>
+							<li>礼品卡支付</li>
+							<li>其他支付</li>
+						</ul>
+						<ul>
+							<li class="xin">配送服务</li>
+							<li>配送范围和运费</li>
+							<li>配送进度查询</li>
+							<li>自提服务</li>
+							<li>商品验货与签收</li>
+						</ul>
+						<ul>
+							<li class="xin">售后保障</li>
+							<li>退换货政策</li>
+							<li>退换货流程</li>
+							<li>退款说明</li>
+							<li>延保说明页面</li>
+							<li>联系客服</li>
+						</ul>
+						<ul>
+							<li class="xin">商家合作</li>
+							<li>商家入驻</li>
+							<li>商必赢</li>
+							<li>平台规则</li>
+							<li>企业采购</li>
+						</ul>
+						<ul>
+							<li class="xin">APP更优惠</li>
+							<li><img src="img/yhd/CgQCr1KW1juAFH9YAAAatCrcuRI48200.png" /></li>
+
+						</ul>
+						<ul>
+							<li class="xin">加微信查订单</li>
+							<li><img src="img/yhd/CgQCtlKW1RSAe6dIAAAcun_R_Wk58300.jpg" /></li>
+
+						</ul>
+					</div>
+					<div class="bottom-main-di">
+						<ol>
+							<li><a href="#">关于1号店   &nbsp; |</a></li>
+							<li><a href="#">我们的团队 &nbsp; |</a></li>
+							<li><a href="#">网站联盟 &nbsp; |</a></li>
+							<li><a href="#">热门搜索 &nbsp; |</a></li>
+							<li><a href="#">友情链接 &nbsp; |</a></li>
+							<li><a href="#">1号店社区 &nbsp; |</a></li>
+							<li><a href="#">诚征英才 &nbsp; |</a></li>
+							<li><a href="#">商家登录 &nbsp; |</a></li>
+							<li><a href="#">供应商登录 &nbsp; |</a></li>
+							<li><a href="#">放心搜 &nbsp; |</a></li>
+							<li><a href="#">1号店新品 &nbsp; |</a></li>
+							<li><a href="#">开放平台 &nbsp; |</a></li>
+							<li><a href="#">沃尔玛 </a></li>
+						</ol><br />
+						<ol class="er">
+							<li><a href="#">沪ICP备14050023号   &nbsp; |</a></li>
+							<li><a href="#">合字B1.B2-20130004 &nbsp; |</a></li>
+							<li><a href="#">营业执照 &nbsp; |</a></li>
+							<li><a href="#">互联网药品信息服务资格证 &nbsp; |</a></li>
+							<li><a href="#">互联网药品交易服务资格证  &nbsp; </a></li>
+
+						</ol><br />
+						<ol class="san">
+							<li><a href="#">Copyright© 1号店网上超市 2007-2016，All Rights Reserved</a></li>
+
+						</ol><br />
+						<ol class="si">
+							<li>
+								<a href="#"><img src="img/yhd/CgQCr1Dzwj2AVUL0AAA-ic2BxNw39500.jpg" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/yhd/CgMBmVLfYZGALWNHAAAOxFbda9472600.gif" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/yhd/CgQCr1PQy1CAF7vaAABDexsiEYM24800.jpg" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/yhd/CgQCrlPYTqCASlHXAAAd82JE0eA31000.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/yhd/ChEi1FYXHcOAVk_WAAAL2r2-yfo10200.jpg" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/yhd/ChEi1VcfPl2AC1T8AAANFrEfJlw97300.jpg" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/yhd/CgQCsVDzw0GABUElAADHlvRfNUk94600.jpg" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/yhd/CgMBmVDzwyaAaIMBAAAJZgSEr6I65200.jpg" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/yhd/CgQCrlDzwnKAUkfSAAAIPrrML6M92400.jpg" /></a>
+							</li>
+
+						</ol>
+					</div>
+
+				</div>
+
+			</div>
+	</body>
+
+</html>
